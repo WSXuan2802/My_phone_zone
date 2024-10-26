@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhoneZone</title>
+    <!-- Bootstrap CSS and Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Link to External Stylesheet -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Bootstrap JS (optional, for full functionality) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="topbar">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Logo Section -->
+                <div class="col-3">
+                    <img src="img/PhoneZone.png" alt="PhoneZone Logo" class="logo" width="250">
+                </div>
+
+                <!-- Search Bar Section -->
+                <div class="col-6">
+                    <form>
+                        <div class="input-group">
+                            <input type="text" class="form-control rounded" placeholder="Find something ...">
+                            <button class="btn btn-secondary" type="button">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Icons Section -->
+                <div class="col-3 text-end">
+                    <button type="button" class="btn btn-link">
+                        <i class="bi bi-bell-fill fs-1 position-relative"></i>
+                    </button>
+                    <button type="button" class="btn btn-link">
+                        <i class="bi bi-cart-fill fs-1 position-relative"> </i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- NavBar Start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-black">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav w-100 d-flex justify-content-between">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="homepage.html"><i class="bi bi-house-fill fs-5"></i><span class="ms-2 fs-5"> Home</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html"><i class="bi bi-bag-fill fs-5"></i><span class="ms-2 fs-5"> Shop</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=""><i class="bi bi-cart-fill fs-5"></i><span class="ms-2 fs-5"> Shopping Cart</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=""><i class="bi bi-person-fill fs-5"></i><span class="ms-2 fs-5"> My Account</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=""><i class="bi bi-info-circle-fill fs-5"></i><span class="ms-2 fs-5"> About Us</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- NavBar End -->
+     
+    <br>
+
+    <!-- Breadcrumb Start -->
+    <div class="container-fluid">
+        <div class="row px-xl-5">
+            <div class="col-12">
+                <nav class="breadcrumb mb-30">
+                    <a class="breadcrumb-item text-dark" href="homepage.html">Home</a>
+                    <a class="breadcrumb-item text-dark" href="#">Shop</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+
+    <!-- Shop Start -->
+    <div class="container-fluid">
+        <div class="row px-xl-5">
+            <!-- Shop Sidebar Start -->
+            <div class="col-lg-3 col-md-4">
+                <!-- Brands Start -->
+                <div class="bg-light p-4 mb-30">
+                    <form>
+                        <h2><b>Categories</b></h2>
+                        <br>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="radio" value="" id="brand-all" name="brand">
+                            <label class="form-check-label" for="brand-all">Samsung</label>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="radio" value="" id="brand-1" name="brand">
+                            <label class="form-check-label" for="brand-1">Vivo</label>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="radio" value="" id="brand-2" name="brand">
+                            <label class="form-check-label" for="brand-2">Oppo</label>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="radio" value="" id="brand-3" name="brand">
+                            <label class="form-check-label" for="brand-3">Huawei</label>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="radio" value="" id="brand-4" name="brand">
+                            <label class="form-check-label" for="brand-4">Xiaomi</label>
+                        </div>
+                    </form>
+                </div>
+                <!-- Brands End -->
+
+                <br>
+                <!-- Price Start -->
+                <div class="bg-light p-4 mb-30">
+                    <form>
+                        <h2><b>Price</b></h2>
+                        <br>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="radio" value="" id="price-all" name="price">
+                            <label class="form-check-label" for="price-all">All</label>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="radio" value="" id="price-1" name="price">
+                            <label class="form-check-label" for="price-1">Under RM 500.00</label>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="radio" value="" id="price-2" name="price">
+                            <label class="form-check-label" for="price-2">RM 500.00 - RM 1000.00</label>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="radio" value="" id="price-3" name="price">
+                            <label class="form-check-label" for="price-3">RM 1000.00 - RM 2000.00</label>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="radio" value="" id="price-4" name="price">
+                            <label class="form-check-label" for="price-4">RM 2000.00 - RM 3000.00</label>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="radio" value="" id="price-5" name="price">
+                            <label class="form-check-label" for="price-5">Over RM 3000.00</label>
+                        </div>
+                    </form>
+                </div>
+                <!-- Price End -->
+            </div>
+            <!-- Shop Sidebar End -->
+
+            <!-- Product Display Start -->
+            <div class="col-lg-9 col-md-8">
+                <div class="row">
+                    <!-- Product Item Start -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card" style="height: 500px;">
+                            <div class="card-img-top d-flex align-items-center justify-content-center" style="height: 320px;">
+                                <img src="img/sg1.webp" style="max-height: 100%; max-width: 100%; object-fit: contain;" alt="Product 1">
+                            </div>
+                            <div class="card-body" style="height: 150px;">
+                                <h5 class="card-title"><a href="samsung1.html">Samsung Galaxy S24 FE</a></h5>
+                                <p class="card-text">RM 3,299.00</p>
+                                <p class="card-text">Release date: 26 Sep 2024</p>
+                                <a href="samsung1.html" class="btn btn-custom">View detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Item End -->
+                    <!-- Product Item Start -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card" style="height: 500px;">
+                            <div class="card-img-top d-flex align-items-center justify-content-center" style="height: 320px;">
+                                <img src="img/sg2.png" style="max-height: 100%; max-width: 100%; object-fit: contain;" alt="Product 2">
+                            </div>
+                            <div class="card-body" style="height: 150px;">
+                                <h5 class="card-title"><a href="samsung2.html">Samsung Galaxy Z Fold 6</a></h5>
+                                <p class="card-text">RM 7,299.00</p>
+                                <p class="card-text">Release date: 10 Jul 2024</p>
+                                <a href="samsung2.html" class="btn btn-custom">View detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Item End -->
+
+                    <!-- Product Item Start -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card" style="height: 500px;">
+                            <div class="card-img-top d-flex align-items-center justify-content-center" style="height: 320px;">
+                                <img src="img/sg3.png" style="max-height: 100%; max-width: 100%; object-fit: contain;" alt="Product 2">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="samsung3.html">Samsung Galaxy A55</a></h5>
+                                <p class="card-text">RM 1,999.00</p>
+                                <p class="card-text">Release date: 19 Mar 2024</p>
+                                <a href="samsung3.html" class="btn btn-custom">View detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Item End -->
+                    
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card" style="height: 500px;">
+                            <div class="card-img-top d-flex align-items-center justify-content-center" style="height: 320px;">
+                                <img src="img/vivo1.png" style="max-height: 100%; max-width: 100%; object-fit: contain;" alt="Product 2">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="vivo1.html">Vivo V40 Pro</a></h5>
+                                <p class="card-text">RM 3,299.00</p>
+                                <p class="card-text">Release date: 22 Aug 2024</p>
+                                <a href="vivo1.html" class="btn btn-custom">View detail</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card" style="height: 500px;">
+                            <div class="card-img-top d-flex align-items-center justify-content-center" style="height: 320px;">
+                                <img src="img/vivo2.png" style="max-height: 100%; max-width: 100%; object-fit: contain;" alt="Product 2">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="vivo2.html">Vivo Y28s</a></h5>
+                                <p class="card-text">RM 799.00</p>
+                                <p class="card-text">Release date: 02 Jul 2024</p>
+                                <a href="vivo2.html" class="btn btn-custom">View detail</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card" style="height: 500px;">
+                            <div class="card-img-top d-flex align-items-center justify-content-center" style="height: 320px;">
+                                <img src="img/vivo3.png" style="max-height: 100%; max-width: 100%; object-fit: contain;" alt="Product 2">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="vivo3.html">Vivo V30e</a></h5>
+                                <p class="card-text">RM 1,399.00</p>
+                                <p class="card-text">Release date: 02 May 2024</p>
+                                <a href="vivo3.html" class="btn btn-custom">View detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card" style="height: 500px;">
+                            <div class="card-img-top d-flex align-items-center justify-content-center" style="height: 320px;">
+                                <img src="img/huawei1.png" style="max-height: 100%; max-width: 100%; object-fit: contain;" alt="Product 2">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="huawei1.html">Huawei Pura 70</a></h5>
+                                <p class="card-text">RM 3,699.00</p>
+                                <p class="card-text">Release date: 02 May 2024</p>
+                                <a href="huawei1.html" class="btn btn-custom">View detail</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card" style="height: 500px;">
+                            <div class="card-img-top d-flex align-items-center justify-content-center" style="height: 320px;">
+                                <img src="img/huawei2.jpeg" style="max-height: 100%; max-width: 100%; object-fit: contain;" alt="Product 2">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="huawei2.html">Huawei nova 12s</a></h5>
+                                <p class="card-text">RM 1,999.00</p>
+                                <p class="card-text">Release date: 25 Mar 2024</p>
+                                <a href="huawei2.html" class="btn btn-custom">View detail</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card" style="height: 500px;">
+                            <div class="card-img-top d-flex align-items-center justify-content-center" style="height: 320px;">
+                                <img src="img/huawei3.png" style="max-height: 100%; max-width: 100%; object-fit: contain;" alt="Product 2">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="huawei3.html">Huawei nova Y72</a></h5>
+                                <p class="card-text">RM 799.00</p>
+                                <p class="card-text">Release date: 15 Feb 2024</p>
+                                <a href="huawei3.html" class="btn btn-custom">View detail</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card" style="height: 500px;">
+                            <div class="card-img-top d-flex align-items-center justify-content-center" style="height: 320px;">
+                                <img src="img/oppo1.webp" style="max-height: 100%; max-width: 100%; object-fit: contain;" alt="Product 2">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="oppo1.html">Oppo Reno 12</a></h5>
+                                <p class="card-text">RM 2,199.00</p>
+                                <p class="card-text">Release date: 27 Jun 2024</p>
+                                <a href="oppo1.html" class="btn btn-custom">View detail</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card" style="height: 500px;">
+                            <div class="card-img-top d-flex align-items-center justify-content-center" style="height: 320px;">
+                                <img src="img/oppo2.webp" style="max-height: 100%; max-width: 100%; object-fit: contain;" alt="Product 2">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="oppo2.html">Oppo A3 4G</a></h5>
+                                <p class="card-text">RM 699.00</p>
+                                <p class="card-text">Release date: 13 Sep 2024</p>
+                                <a href="oppo2.html" class="btn btn-custom">View detail</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card" style="height: 500px;">
+                            <div class="card-img-top d-flex align-items-center justify-content-center" style="height: 320px;">
+                                <img src="img/oppo3.webp" style="max-height: 100%; max-width: 100%; object-fit: contain;" alt="Product 2">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="oppo3.html">Oppo A60</a></h5>
+                                <p class="card-text">RM 699.00</p>
+                                <p class="card-text">Release date: 30 Apr 2024</p>
+                                <a href="oppo3.html" class="btn btn-custom">View detail</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card" style="height: 500px;">
+                            <div class="card-img-top d-flex align-items-center justify-content-center" style="height: 320px;">
+                                <img src="img/xm1.webp" style="max-height: 100%; max-width: 100%; object-fit: contain;" alt="Product 2">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="xiaomi1.html">Xiaomi Mix Flip</a></h5>
+                                <p class="card-text">RM 4,999.00</p>
+                                <p class="card-text">Release date: 27 Sep 2024</p>
+                                <a href="xiaomi1.html" class="btn btn-custom">View detail</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card" style="height: 500px;">
+                            <div class="card-img-top d-flex align-items-center justify-content-center" style="height: 320px;">
+                                <img src="img/xm2.png" style="max-height: 100%; max-width: 100%; object-fit: contain;" alt="Product 2">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="xiaomi2.html">Xiaomi 14T</a></h5>
+                                <p class="card-text">RM 1,899.00</p>
+                                <p class="card-text">Release date: 27 Sep 2024</p>
+                                <a href="xiaomi2.html" class="btn btn-custom">View detail</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card" style="height: 500px;">
+                            <div class="card-img-top d-flex align-items-center justify-content-center" style="height: 320px;">
+                                <img src="img/xm3.png" style="max-height: 100%; max-width: 100%; object-fit: contain;" alt="Product 2">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="xiaomi3.html">Xiaomi Redmi 10C</a></h5>
+                                <p class="card-text">RM 599.99</p>
+                                <p class="card-text">Release date: 18 Mar 2024</p>
+                                <a href="xiaomi3.html" class="btn btn-custom">View detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- You can continue adding more products in the same way. -->
+                </div>
+            </div>
+            <!-- Product Display End -->
+        </div>
+    </div>
+    <!-- Shop End -->
+    <br><br>
+
+    <!-- Footer Section Start -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-start">
+                    <h2><b>Follow our social media</b></h2>
+                    <!-- Section: Social media -->
+                    <section class="mb-3">
+                        <!-- Facebook -->
+                        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                            <i class="bi bi-facebook fs-3" ></i>
+                        </a>
+                        <!-- Twitter -->
+                        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                            <i class="bi bi-twitter fs-3"></i>
+                        </a>
+                        <!-- Instagram -->
+                        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                            <i class="bi bi-instagram fs-3"></i>
+                        </a>
+                    </section>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h2><b>Customer Service</b></h2>
+                    <p>Contact Number: +012-345-6789</p>
+                    <p>Email: phoneZone666@gmail.com</p>
+                </div>
+                <div class="col-md-4 text-end">
+                    <h2 class="text-center"><b>Oue Physical Store</b></h2>
+                    <p class="text-center">Address: 123 Main Street, City, Country</p>
+                    <p class="text-center">Opening Hours: 9AM - 6PM</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+</body>
+
+</html>
